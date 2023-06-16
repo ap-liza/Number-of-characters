@@ -1,0 +1,12 @@
+def check_num_character():
+    name = input("Enter a word: ")
+    character = input('Enter an alphabet from the word above: ')
+    count = 0
+    for char in name:
+        if char != character:
+            continue
+        else:
+            count = count + 1
+    print(f"The number of {character} in the above word '{name}' is : {count}")
+
+check_num_character() 
